@@ -1,0 +1,348 @@
+
+*{
+  box-sizing: border-box;
+
+} 
+.wrapper{
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    
+}
+body{
+    background-color: #F2EDE4;
+    font-size: 14px;
+    font-family: sans-serif;
+    
+}
+.header-container{
+     width: 100%;
+     background-color: #3B403C;
+     height: 80px;
+     color: white;
+    padding-top: .85px;
+    text-align: center;
+    font-size: 30px; 
+}
+.mainContainer{ 
+    display: flex;
+    flex-direction: row;
+    height: 620px;
+    width: 100%;
+    background-color: #9FA685;
+
+    
+}
+/*---- Row1 Col1 container ---- */
+.row1-col-1{
+    width: 70%;
+    height: 60%;
+    background-color: #3B403C;
+    box-shadow: 5px 5px 3px #B7B4B0;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 7px;
+    margin-left: 7px; 
+}
+.row1-col-1 a{
+    padding-top: 40px;
+    text-decoration: none;
+    color: #F7F3ED;
+}
+/*---- End- Row1 Col1 container --- */
+
+
+
+
+/*---- Row2 Col1 container ---- */
+.row2-col-1{
+    background-color: #3B403C;
+    margin-top: 160px;
+    width: 100%;
+    height: 57%;
+    padding-left: 7px;
+    box-shadow: 5px 5px 3px #B7B4B0;
+    
+}
+.row2-col-1 a{
+    text-decoration: none;
+    color: #F7F3ED;
+}
+
+.row1-col-2{
+    margin-left: 10px;
+    background-color: #D6D9C5;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.row1-col-2 a{
+    text-decoration: none;
+    color: #F7F3ED;  
+}
+.icon-container{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 3px #B7B4B0;
+    text-align: center;
+    word-wrap:normal;
+    width: 970px;
+    height: 60%;
+    opacity: 0.95px;
+    background-color: #9FA685; 
+}
+
+#blue{
+    box-shadow: 5px 5px 3px #3B403C;
+    z-index: 1;
+    background-color: #8FBF65;
+    color: white;
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 50%;
+    height: inherit;
+}
+
+#gray{
+     box-shadow: 5px 5px 3px #3B403C;
+    z-index: 2;
+    background-color: #85898C;
+    color: white;
+    width: 50%;
+    height: 60.9%;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+#cornflowerblue{
+   box-shadow: 5px 5px 3px #3B403C;
+   z-index: 3;
+    background-color: #B4C4D9;
+    color: white;
+    width: 50%;
+    height: 60.9%;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+#orange{
+     box-shadow: 5px 5px 3px #3B403C;
+    z-index: 4;
+    background-color: #F25757;
+    color: white;
+    width: 50%;
+    height: 60.9%;
+    margin-top: 20px;
+}
+
+#imgContainer{
+    background-color: #3B403C;
+    color: black;
+    width: 100%; 
+    height: 25%;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    
+}
+
+img{
+    float: left;
+    box-shadow: 5px 5px 3px #F7F3ED;
+    border-radius: 15px;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    margin-top: 20.5px;
+    
+}
+/*--- End-- Row2 Col1 container --- */
+
+
+/*---- Account Form ---- */
+.account_form_container {
+        background-color: #8FBF65;
+        box-shadow: 5px 5px 3px #F7F3ED;
+        border-radius: 15px;
+        padding: 10px;
+        margin-top: 30px;
+        margin-left: 330px;
+        width: 60%;
+        height: 70%;
+        color: #3B403C;  
+}
+
+input{
+    padding: 7px; 
+    
+}
+#fName{
+    text-align: left;
+    margin-left: 15px;
+    margin-right: 25px;
+   
+    
+}
+#lName{
+    margin-left: 15px;
+    margin-right: 25px;
+ 
+}
+#uName{
+    margin-left: 17px;
+    margin-right: 25px;
+  
+}
+#pName{
+    margin-left: 25px;
+}
+/*---- End- Account Form ---- */
+
+
+
+/*---- Sheduler Form ---- */
+.scheduler_form_container{
+        background-color: #85898C;
+        box-shadow: 5px 5px 3px #F7F3ED;
+    border-radius: 15px;
+        padding: 10px;
+        margin-top: 30px;
+        margin-left: 330px;
+        width: 60%;
+        height: 70%;
+        color: #F7F3ED;
+}
+
+#numOfDays{
+    padding: 10px;
+    margin-left: 10px;
+    
+}
+#dailyMeals{
+    margin-right: 10px;
+    padding: 10px;
+    margin-left: 33px;
+}
+
+
+/*---- End- Sheduler Form ---- */
+
+
+.row1-col-3{
+    width: 70%;
+    height: 97.2%;
+    background-color: #3B403C;
+    box-shadow: 5px 3px 3px #B7B4B0;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 7px;
+    margin-left: 7px;
+    color: #F7F3ED;
+  
+}
+.row1-col-3 p{
+    padding-top: 20px;
+}
+
+
+/*---- Start Modal for Modal-Box ---- */
+
+ .advBtnModal {
+        font-family: sans-serif;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 35%;
+        height: 50%;
+        margin: 50px;
+        margin-top: 50px;
+        background-color: #B7B4B0;
+        box-shadow: 1px 1px 3px;
+        border-radius: 3px;
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.1);
+        
+        
+ }
+.advBtnModal_Container{
+    top: 10px;
+     width: 100%;
+     margin-top: 10px;
+    background-color: #3B403C;
+    height: 40px;
+    color: white;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+   
+    
+    
+}
+.adv-modal-content {
+        position: absolute;
+        margin-top: 18px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1rem 1.5rem;
+        width: 60%;
+        height: 70%;      
+}
+
+.close-button {
+        padding: 7px;
+        margin-top: 20px;
+        float: right;
+        cursor: pointer;
+        background-color: black;
+}
+.close-button:hover {
+        background-color: #adadad;
+      }
+
+.adv_show-modal{
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+        transition: visibility 0s linear 0s, 
+}
+.catalog_container{
+    width: 50%;
+    height: 83%;
+    background-color: #F2EDE4;
+    box-shadow: 5px 3px 3px #B7B4B0;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 7px;
+    margin-left: 7px;
+    color: darkslategray;
+    overflow: scroll;
+    border-radius: 10px;
+}
+.catalog_box{
+    margin-left: 50px;
+    border-radius: 10px;
+    z-index: 1;
+    background-color: #B4C4D9;
+    color: darkslateblue;
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 70%;
+    height: 43%;
+    border: 6px dotted gray;
+}
+
+
+
+
+.footer-container{
+    
+     width: auto;
+     height: 70px;
+     background-color: #3B403C;
+
+     color: white;
+}

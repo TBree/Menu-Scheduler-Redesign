@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Test Me 101:: SCHEDULER </title>
+        
+        <link rel="stylesheet" href="test101.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    </head>
+        
+    <body>
+        
+ <div class="wrapper">
+
+<!-- ------------------------------------------------------- -->
+    
+<div class="header-container">
+     <P>MENU PLANNER 101</P>
+     </div>
+     <hr>
+        <p>Welcome, John</p>
+    
+
+            
+      <div class="mainContainer"> <!-- A Row Contanier -->
+          
+          <div class="row1-col-1"> 
+              <a href="test101.html">
+                 
+               <p> HOME </p>
+                   <!-- HOME-101 hyperlink -->
+              </a><hr>
+              
+               <a href="test102.html">
+                    <p> ACCOUNT </p>
+                   <!-- ACCOUNT-102 hyperlink -->
+               </a><hr>
+              
+              <a href="test103.html">
+                    <p> SCHEDULER </p>
+                   <!-- SCHEDULER-103 hyperlink -->
+               </a><hr>
+              
+              <a href="test104.html">
+                    <p> CATALOG </p>
+                   <!-- CATALOG-104 hyperlink -->
+               </a><hr>
+              
+              <a href="test105.html">
+                    <p> DASHBOARD </p>
+                   <!-- DASHBOARD-105 hyperlink -->
+               </a><hr>
+     
+              
+               <div class="row2-col-1"> 
+                   <a href="test106.html">
+                       <br>
+                    <p> SIGN IN </p>
+                   <!-- SIGN-IN-106 hyperlink -->
+               </a><hr>
+              <!-- row2-col-1 -->
+              </div>
+              
+              
+            <!-- row1-col-1 -->
+          </div> 
+          
+<!-- ------------------------------------------------------- -->  
+      
+        <div class="row1-col-2">
+        
+             <p style = "padding-left: 10px;">SCHEDULER</p>
+<hr>            
+             <div class="icon-container">
+                 
+                 
+        <form action="name_Of_My_PHP_File.php" method="post">
+            <div class="scheduler_form_container">
+            
+                <label>Number Of Days: (Range from 1-31)</label><input  id="numOfDays" type="number"  min="1" max="31" step="1" name="number-of-days">
+            
+               
+                <br>
+                
+                <label>Meals per Day: (Range from 1-10)</label><input id="dailyMeals" type="number" required min="1" max="10">
+              
+                
+                <br><hr>
+                
+                <label>Meal Types:</label> 
+                <br><br>
+                <label for="menueTypes"> Breakfast</label><input id="uName" type="checkbox" required >
+                <label for="menueTypes"> Lunch</label><input id="uName" type="checkbox" required >
+                <label for="menueTypes"> Dinner</label><input id="uName" type="checkbox" required >
+                <hr>
+    
+                <br>
+            
+            <hr>
+<!-- advance button Modal Trigger/Open Modal -->
+                <button type="button" id="advBtn">advance</button>
+                
+                 <!-- The Model content -->
+                
+    <div class="advBtnModal">
+        <span class="close-button">&times;</span>
+      <div class="advBtnModal_Container">
+       
+        <p>Advance Scheduler</p>
+          <hr>
+       </div> 
+      <div class="adv-modal-content">
+          
+          <h2>Advance:</h2>
+      <form action= "/form/submit" method="post" required>
+          
+          <input type="checkbox" id="peanut" name="peanut" value="penut">
+                <label for="peanut">Peanut</label>
+
+         <input type="checkbox" id="fish" name="fish" value="tish">
+                <label for="days">Fish</label>
+
+        <input type="checkbox" id="eggs" name="eggs" value="eggs">
+                 <label for="days">Eggs</label>
+                
+         <input type="checkbox" id="dairy" name="daiyr" value="dairy">
+               <label for="days">Dairy</label> 
+  <br><br>
+          <hr>
+         <label for="lincludeAllergy">Included:</label>
+                <input type="text" id="includeAllergy" required placeholder="i.e. beef, chicken, coco, etc;" style="padding-right: 60%;">
+          
+        <label for="lincludeAllergy">Excluded:</label>
+                <input type="text" id="exAllergy" required placeholder="i.e. flour, tomatoes, pickles, etc;" style="padding-right: 60%;">
+        <hr> 
+                
+          <button class="btn" type="submit">add</button>   
+          <input type="reset">
+        
+         
+ </form>
+          
+        <!-- end adv-modal-conten -->
+      </div>
+        <!-- end advBtnModal modal -->
+    </div>
+    
+ <script>
+      let advBtnModal = document.querySelector(".advBtnModal");
+      let trigger = document.querySelector("#advBtn");
+      let closeButton = document.querySelector(".close-button");
+      
+     function toggleModal() {
+        advBtnModal.classList.toggle("adv_show-modal");
+      }
+      
+     function windowOnClick(event) {
+        if(event.target === advBtnModal) {
+          toggleModal();
+        }
+      }
+      trigger.addEventListener("click", toggleModal);
+     
+      closeButton.addEventListener("click", toggleModal);
+     
+      window.addEventListener("click", windowOnClick);
+</script>
+                
+                
+                
+                
+                
+                
+                <button type="submit" id="submit">submit</button>
+                <button type="submit" id="submit">clear</button>
+                
+                
+                
+                
+                <!-- SCHEDULER Container Form -->
+                </div>
+     <!-- Account Form -->
+    </form>
+   
+    
+                  <!-- icon-container -->
+                </div>
+<br><br><hr>
+            <!-- row1-col-2 -->
+        </div>
+          
+<!-- ------------------------------------------------------- -->
+         
+        <div class="row1-col-3">
+            <p>Additional 1</p>
+              <p>Additional 2</p>
+              <p>Additional 3</p>
+              <p>Additional 4</p>
+              <p>Additional 5</p>
+              <!-- row1-col-3 -->
+        </div>
+          
+          
+          
+<!-- ------------------------------------------------------- -->
+         <!-- mainContainer -->
+   </div>
+        
+        <br>
+        <div class="footer-container">Footer</div>
+       <!-- wrapper -->
+        </div>
+    </body>
+</html>
