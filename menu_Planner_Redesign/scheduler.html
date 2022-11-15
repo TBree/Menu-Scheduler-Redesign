@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Menu Planner 101:: SCHEDULER </title>
+        
+        <link rel="stylesheet" href="test101.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    </head>
+        
+    <body>
+        
+ <div class="wrapper">
+
+<!-- ------------------------------------------------------- -->
+    
+<div class="header-container">
+     <P>MENU PLANNER 101</P>
+     </div>
+     <br>
+        <p>Welcome, John</p> 
+     <hr>  
+
+            
+      <div class="mainContainer"> <!-- A Row Contanier -->
+          
+          <div class="row1-col-1"> 
+              <a href="home.html">
+                 
+               <p> HOME </p>
+                   <!-- HOME-101 hyperlink -->
+              </a><hr>
+              
+               <a href="accounts.html">
+                    <p> ACCOUNTS </p>
+                   <!-- ACCOUNT-102 hyperlink -->
+               </a><hr>
+              
+              <a href="scheduler.html">
+                    <p> SCHEDULER </p>
+                   <!-- SCHEDULER-103 hyperlink -->
+               </a><hr>
+              
+              <a href="catalog.html">
+                    <p> CATALOG </p>
+                   <!-- CATALOG-104 hyperlink -->
+               </a><hr>
+              
+              <a href="dashboard.html">
+                    <p> DASHBOARD </p>
+                   <!-- DASHBOARD-105 hyperlink -->
+               </a><hr>
+     
+              
+               <div class="row2-col-1"> 
+                   <a href="log_in.html">
+                       <br>
+                    <p> SIGN IN </p>
+                   <!-- SIGN-IN-106 hyperlink -->
+               </a><hr>
+              <!-- row2-col-1 -->
+              </div>
+              
+              
+            <!-- row1-col-1 -->
+          </div> 
+       
+<!-- ------------------------------------------------------- -->  
+      
+        <div class="row1-col-2">
+        
+              <p style=" padding-left: 11px; ">SCHEDULE</p>
+<hr> <hr>           
+    
+            
+    <div class="icon-container">
+                 
+                 
+        <form action="name_Of_My_PHP_File.php" method="post">
+            <div class="scheduler_form_container">
+            
+                <label>Number Of Days: (Range from 1-31)</label><input  id="numOfDays" type="number"  min="1" max="31" step="1" name="number-of-days">
+            
+               
+                <br>
+                
+                <label>Meals per Day: (Range from 1-10)</label><input id="dailyMeals" type="number" required min="1" max="10">
+              
+                
+            <br><hr>
+                
+                <label>Meal Types:</label> 
+                <br><br>
+                <label for="menueTypes"> Breakfast</label> 
+                    <input id="uName" type="checkbox" optional >
+                
+                <label for="menueTypes"> Lunch</label>
+                    <input id="uName" type="checkbox" optional >
+                
+                <label for="menueTypes"> Dinner</label>
+                    <input id="uName" type="checkbox" optional >
+                <hr>
+    
+                <br>
+            
+            <hr>
+                
+                
+                <button type="submit" id="submit">submit</button>
+                
+                <button type="submit" id="submit">clear</button>
+                
+                
+            <!-- advance button Modal Trigger/Open Modal -->
+ 
+                <button id="advBtn"><strong>advance</strong></button>
+            
+
+        <!-- The Modal for Adv Button -->
+<div id="adv_Modal" class="advModalBckg">
+
+        <span class="advClose">&times;</span>  <!-- Close Button-->
+    
+    
+        <!-- Modal Content for Adv Button-->
+            <div class="adv_modal_content">
+                <h2>Advance Options</h2>
+               
+        <hr> 
+                
+        <form action="name_Of_My_PHP_File.php" class="advBtnformContainer">  
+            
+            <div class="adv_option">
+                       
+                  <label for="peanut"  >Peanut</label>
+                    <input type="checkbox" id="peanut" name="peanut" value="penut" style="float: left;">
+                          
+                            
+                <label for="fish">Fish</label>
+                    <input type="checkbox" id="fish" name="fish" value="fish">
+                
+                            
+                <label for="eggs">Eggs</label>
+                    <input type="checkbox" id="eggs" name="eggs" value="eggs">
+                    
+                
+                            
+                <label for="dairy" >Dairy</label> 
+                    <input type="checkbox" id="dairy" name="dairy" value="dairy">
+               
+                            
+        
+               </div>
+                            
+                            
+            <br><hr>
+                   <label for="lincludeAllergy">Included:</label>
+                        <input type="text" id="includeAllergy" required placeholder="i.e. beef, chicken, coco, etc;" style="padding-right: 60%;">
+                
+                  <label for="lincludeAllergy">Excluded:</label>
+                        <input type="text" id="exAllergy" required placeholder="i.e. flour, tomatoes, pickles, etc;" style="padding-right: 60%;">
+                <hr> 
+                
+                <button type="submit" id="add">add</button>
+                
+                <button type="submit" id="reset">reset</button>
+           
+                
+        </form>
+            <!-- .advBtnFormPopup & #advBtnPopupForm -->
+               
+         <!-- div adv_Modal_Content-->
+        </div>
+        
+        <!-- div adv_Modal-->
+    </div>
+                
+  <!-- Advance Modal Script --> 
+        <script>
+            var advModalBckg = document.getElementById("adv_Modal"); 
+            var adv_btn = document.getElementById("advBtn");
+            var span = document.getElementsByClassName("advClose")[0];
+            
+            adv_btn.onclick = function() {
+            advModalBckg.style.display = "block";
+            }
+            
+            span.onclick = function() {
+            advModalBckg.style.display = "none";
+            }
+            
+       </script>
+                
+                
+        
+
+                
+                <!-- SCHEDULER Container Form -->
+            </div>
+     <!-- Account Form -->
+    </form>
+   
+    
+                  <!-- icon-container -->
+                </div>
+<br><br><hr>
+            <!-- row1-col-2 -->
+        </div>
+          
+<!-- ------------------------------------------------------- -->
+         
+        <div class="row1-col-3">
+            <p>Favorite Recipe  1</p>
+              <p>Favorite Recipe 2</p>
+              <p>Favorite Recipe 3</p>
+              <p>Favorite Recipe 4</p>
+              <p>Favorite Recipe 5</p>
+              <!-- row1-col-3 -->
+        </div>
+          
+          
+          
+<!-- ------------------------------------------------------- -->
+         <!-- mainContainer -->
+   </div>
+        
+        <br>
+        <div class="footer-container">Footer</div>
+       <!-- wrapper -->
+        </div>
+    </body>
+</html>
