@@ -107,7 +107,6 @@ body{
 }
 
 .icon-container{
-   
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -178,8 +177,7 @@ body{
 /*- Row2 Col1 Accounts-container -- */
 
 #blue{
-     border: .1px solid #3B403C;
-    box-shadow: .5px 2px 2px #3B403C;
+     
     background-color: #8FBF65;
     color: white;
     margin-top: 100px;
@@ -189,8 +187,7 @@ body{
 }
 
 #gray{
-     border: .1px solid #3B403C;
-  box-shadow: .5px 2px 2px #3B403C;
+   
     background-color: #85898C;
     color: white;
     width: 60%;
@@ -200,8 +197,7 @@ body{
 }
 
 #cornflowerblue{
-     border: .1px solid #3B403C;
-     box-shadow: .5px 2px 2px #3B403C;
+
     background-color: #B4C4D9;
     color: white;
     width: 60%;
@@ -211,8 +207,7 @@ body{
 }
 
 #orange{
-     border: .1px solid #3B403C;
-     box-shadow: .5px 2px 2px #3B403C;
+
      background-color: #F25757;
      color: white;
      width: 60%;
